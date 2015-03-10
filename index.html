@@ -1,0 +1,59 @@
+---
+layout: default
+---
+
+<section class="testimonial">
+  <div class="testimonial-wrap">
+    <div class="photo">
+    <img src="/images/testimonial-1.jpg">
+  </div>
+    <div class="testimonial-text">
+          <div class="quote">
+            <span>Head start is amazing, I'm so glad I did this program"</span>
+          </div>
+        <div class="name">
+          <span>Ann mother of Cass</span>
+    </div>
+  </div>
+</section>
+
+<main>
+<h2>What is Head Start?</h2>
+<p>Head Start is a free child care and pre-school program for kids from birth to 5 years old. We&nbsp;also provide services for the whole family, even pregnant mothers can enroll. Our program is for&nbsp;families who meet certain requirements.</p>
+<p>Head Start has well-trained teachers who are devoted to the success of your whole family.&nbsp;</p>
+<p>Some locations offer full-day programs and others offer half-day programs.</p>
+<p>Kids get to:</p>
+<ul>
+<li>develop basic math and reading skills</li>
+<li>interact with other kids their age</l1>
+<li>learn and have fun at the same time</li>
+<li>eat healthy breakfast, lunch, and snacks</li>
+<li>access free health services</li>
+<li>Parents and guardians get to:</li>
+<li>access free career training and job opportunities</li>
+<li>meet other families with young children</li>
+<li>learn about child development</li>
+<li>gain leadership skills</li>
+</ul>
+<p>Are you pregnant? We offer free services to help you and your new baby get ahead through the&nbsp;best health and education opportunities.</p>
+<h2>Who is it for?</h2>
+<p>Head Start is for families with kids from pregnancy to age 5. We provide individual learning&nbsp;plans for your child. We offer infant and toddler care, half-day programs, full-day programs, and&nbsp;home-based services.</p>
+<p>You must meet certain guidelines in order to get into Head Start.</p>
+<p>The first step is to look at how many people are in your home and how much money everyone&nbsp;earns.</p>
+
+</main>
+<footer style="padding: 1em;">
+{% if site.posts %}
+  <h2>A list of all the posts</h2>
+  <ul>
+    {% for post in site.posts %}
+      <li>
+        <a href="{{ post.url }}" title="{{post.title}}">
+          {{ post.title }}
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+{% endif %}
+<small>Copyright 2015</small>
+</footer>
